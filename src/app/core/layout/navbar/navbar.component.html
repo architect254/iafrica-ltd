@@ -1,0 +1,5 @@
+<nav>
+    @for (menu of menuItems; track menu.id) {
+         <a mat-button [routerLink]="menu.path">{{ menu.title }}</a>
+      }
+</nav>
