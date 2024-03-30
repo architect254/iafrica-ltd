@@ -1,0 +1,16 @@
+:host{
+    display: flex;
+}
+article{
+    width: 960px;
+}
+aside{
+    width: 300px;
+}
+.mat-mdc-list-item.mdc-list-item--with-leading-avatar.mdc-list-item--with-one-line, .mat-mdc-list-item.mdc-list-item--with-leading-checkbox.mdc-list-item--with-one-line, .mat-mdc-list-item.mdc-list-item--with-leading-icon.mdc-list-item--with-one-line {
+    border-left: 1px solid purple;
+}
+a.mdc-list-item.mdc-list-item--activated.mdc-list-item{
+    border-left: 4px solid purple;
+}
+.activated { color: #ccc; }

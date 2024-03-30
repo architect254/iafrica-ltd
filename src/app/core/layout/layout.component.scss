@@ -1,5 +1,26 @@
-:host{
+:host {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    padding-top: 50px;
+
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">" !important;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+main {
+    width: 1260px;
+    margin: 0 auto;
+}
+.breadcrumb{
+    font-weight: 700;
+}
+.breadcrumb-item > a,li.breadcrumb-item.active{
+    color: black;
+    text-decoration: none;
+
+    
 }

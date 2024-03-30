@@ -1,5 +1,11 @@
-<nav>
+<header>
+    <h1 class="mat-headline-4">Impact Africa Ltd</h1>
+</header>
+<mat-nav-list>
     @for (menu of menuItems; track menu.id) {
-         <a mat-button [routerLink]="menu.path">{{ menu.title }}</a>
+        <a mat-list-item [activated]="menu.isActive" [routerLink]="menu.path">
+            <mat-icon matListItemIcon>{{menu.icon}}</mat-icon>
+            {{menu.title}}
+        </a>
       }
-</nav>
+</mat-nav-list>

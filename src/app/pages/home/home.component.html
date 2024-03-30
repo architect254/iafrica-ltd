@@ -1,1 +1,16 @@
-<p>home works!</p>
+<article>
+  @for (content of cardContent; track content.title) {
+    <mat-card class="iafrica-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <div style="margin-bottom: 32px;margin-left: 10px;">
+            <mat-card-title>{{content.title}}</mat-card-title>
+            <mat-card-subtitle>{{content.description}}</mat-card-subtitle>
+          </div>
+          <img mat-card-md-image src="{{content.imageUrl}}">
+        </mat-card-title-group>
+      </mat-card-header>
+    </mat-card>
+  }
+ 
+</article>

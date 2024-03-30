@@ -1,0 +1,11 @@
+<article>a</article>
+<aside>
+    <mat-nav-list color="accent">
+        @for (menu of menuItems; track menu.id) {
+            <a mat-list-item color="accent" [activated]="menu.isActive" [routerLink]="menu.path" routerLinkActive="activated">
+                <mat-icon matListItemIcon>{{menu.icon}}</mat-icon>
+                {{menu.title}}
+            </a>
+          }
+    </mat-nav-list>
+</aside>

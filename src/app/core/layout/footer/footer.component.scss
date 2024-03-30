@@ -1,0 +1,27 @@
+:host{
+    width: 100%;
+}
+nav, ul{
+    color: black;
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+p{
+    margin-top: 20px;
+    text-align: center;
+}
