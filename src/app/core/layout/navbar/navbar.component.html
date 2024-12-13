@@ -1,0 +1,8 @@
+<mat-nav-list>
+    @for (menu of menuItems; track menu.id) {
+        <a mat-list-item [activated]="menu.isActive" [routerLink]="menu.path">
+            <mat-icon matListItemIcon>{{menu.icon}}</mat-icon>
+            {{menu.title}}
+        </a>
+      }
+</mat-nav-list>
